@@ -1,0 +1,103 @@
+/************************** Sidebar.jsx *******************************/
+#sidebarMenu {
+/* background-color: blueviolet; */
+/* width: 250px; */
+border: 1px rgb(255, 255, 255);
+border-style: inset inset none none;
+background-color: #326981;
+height: calc(100vh - 87px);
+position: sticky;
+top: 45px;
+}
+
+#profil {
+/* background-color: aquamarine; */
+height: 360px;
+}
+
+#photoProfil {
+    margin-top: 120px;
+    height: 65%;
+    width: 60%;
+    overflow: hidden;
+}
+
+#photoProfil img {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+}
+
+#photoProfil .nomUser {
+    padding-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#sidebarMenu #navbarLinks {
+    /* background-color: rgb(28, 73, 58); */
+    /* margin haut, droite, bas, gauche*/
+    margin: 25px 0 0 0;
+}
+
+#sidebarMenu #navbarLinks ul{
+   padding: 0;
+   margin: 0;
+   width: 100%;
+}
+
+#sidebarMenu #navbarLinks li{
+    list-style:none; /* désactive les puces en début de ligne*/
+     /* centrer le texte */
+    line-height: 50px;
+    border: 1px rgb(0, 0, 0);
+    border-style: inset none inset none;
+}
+/* au survol */
+#sidebarMenu #navbarLinks li:hover{
+   opacity: 0.33;
+}
+
+#sidebarMenu #navbarLinks li i{
+    font-size: 1.4rem; /* taille icone */
+    padding-right: 5px; /* espacement entre icone et span*/
+    color:#fff;
+}
+
+#sidebarMenu #navbarLinks li a{
+   justify-content: center;
+   align-items: center;
+}
+
+li:hover::before {
+    content: attr(data-tooltip);
+    position:absolute;
+    top: 325px;
+    left: 50px;
+    padding: 0 8px 0 8px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 20px;
+  }
+
+/************************ Footer.jsx ************************/
+footer {
+    background-color: #234b5c;
+    width: 100%;
+    padding: 8px;
+    border: 1px #1d1d1d4f;
+    border-style: solid none solid none;
+    text-align: center;
+} 
+
+footer .société{
+    display: inline; /* la taille du paragraphe société s'adapte à son contenu*/
+    color: #fff; /* couleur du texte en blanc*/
+    margin: 0; /* supprime l'espace vide du paragraphe*/
+    font-size: 1em; /* taille police, j'ai privilégié em car plus adapté*/
+}
+
+footer p:hover {
+    color: #aaa; /* au survol d'un paragraphe, l'espace*/
+  }
