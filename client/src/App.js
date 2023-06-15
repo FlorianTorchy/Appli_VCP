@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Index from "./components/Index";
-import Ecran from "./components/Ecran";
+import Ecran from "./components/Ecran.tsx";
 import Footer from "./components/Footer";
 import React from "react";
 import "./App.css";
