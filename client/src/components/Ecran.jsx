@@ -16,16 +16,18 @@ function Ecran() {
     const msg = json.msg;
 
     setHistorique(json);
-    console.log(historique);
+    console.log(json);
   };
 
   return (
     <div>
       <h1>Écran</h1>
       <button onClick={handleClick}> Bonjour </button>
-        {historique.map((item) => (
-          <p><span key={item.index}>({JSON.stringify(item.adresse_ip)})</span></p>
-        ))}
+      {historique.map((item, index) => (
+        <p>
+          <span key={index}>({JSON.stringify(item.adresse_ip)})</span>
+        </p>
+      ))}
     </div>
   );
 }
