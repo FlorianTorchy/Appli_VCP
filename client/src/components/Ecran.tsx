@@ -9,6 +9,7 @@ const Ecran: FC <EcranProps> = props => {
     const handleClick = async () => {
         const data = await window.fetch("/historique");
         const json = await data.json();
+        const msg = json.msg;
     
         setHistorique(json);
         console.log(json);
