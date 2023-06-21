@@ -4,9 +4,8 @@ const mysql = require("mysql2");
 const connection = 
       mysql.createConnection({
       host: "localhost",
-      user: "Programme_Prod",
-      password: process.env.MDP_mysql,
-      database: "projet_egis_test",
+      user: "root",
+      database: "projet_egis",
     });
 
   // Gestion des erreurs connexion bdd

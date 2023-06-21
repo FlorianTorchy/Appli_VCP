@@ -26,7 +26,7 @@ app.get("/*", (_, res) => {
 });
 
 // Si port déjà défini dans .env alors elle prend sa valeur, sinon, elle est égale à 3000
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Serveur en écoute sur le port ${PORT} http://localhost:${PORT}`);
 });

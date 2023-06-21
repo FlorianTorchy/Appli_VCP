@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import Index from "./components/Index";
-import Ecran from "./components/Ecran.tsx";
-import Footer from "./components/Footer";
+import Header from "./pages/Header";
+import Sidebar from "./pages/Sidebar";
+import Index from "./pages/Index";
+import Ecran from "./pages/Ecran";
+import Footer from "./pages/Footer";
 import React from "react";
 import "./App.css";
 
